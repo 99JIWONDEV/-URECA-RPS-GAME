@@ -1,12 +1,14 @@
-# React + Vite
+# 0410 유레카 가위바위보 게임 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+유레카 수업시간에 스스로 개발한 가위바위보 게임입니다. 
 
-Currently, two official plugins are available:
+React의 state 개념과 props 개념을 학습했습니다. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 프로젝트 이미지
 
-## Expanding the ESLint configuration
+<img width="1346" alt="Image" src="https://github.com/user-attachments/assets/95dc6f84-7c53-4ca5-913b-37f8b4faecf8" />
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 프로젝트 기능 
+- 컴퓨터와 가위바위보를 할 수 있습니다. 
+- 한 번 가위바위보 버튼을 클릭하면 2초 동안 클릭할 수 없습니다. 
+- 다시하기 버튼을 통해 초기화할 수 있습니다. 
