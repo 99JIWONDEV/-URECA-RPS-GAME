@@ -15,5 +15,10 @@
   border: none;
   border-radius: 0.4rem;
   font-weight: 600;
+  cursor: pointer;
+}
 
+.buttons > button:hover {
+  background-color: var(--blue-dark);
+  transform: scale(1.05);
 }
