@@ -11,6 +11,19 @@
   ;
 }
 
+.winner {
+  background-color: var(--bg-color);
+}
+
+.winner h2,
+.winner p {
+  color: var(--user-color);
+}
+
+.loser {
+  opacity: 0.4;
+}
+
 .card > h2 {
   font-size: 1.5rem;
   font-weight: 700;
