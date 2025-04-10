@@ -1,5 +1,6 @@
 .App {
-  border: 1px solid var(--gray-300);
+  border: 2px solid var(--gray-300);
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   gap: var(--gap3);

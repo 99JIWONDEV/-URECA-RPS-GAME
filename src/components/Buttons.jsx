@@ -6,7 +6,7 @@ import paper from '../assets/paper.png'
 import rock from '../assets/rock.png'
 import scissors from '../assets/scissors.png'
 
-const Buttons = ({ onClick, onReset }) => {
+const Buttons = ({ onClick, onReset, isDisabled }) => {
   const buttonData = [
     { img: scissors, name: '가위', color: 'var(--green)' },
     { img: rock, name: '바위', color: 'var(--blue-dark)' },
@@ -17,7 +17,7 @@ const Buttons = ({ onClick, onReset }) => {
     <div className={style.buttons}>
       {buttonData.map((btn, idx) => (
         <div key={idx} onClick={() => onClick(btn.name)}>
-          <Button img={btn.img} name={btn.name} color={btn.color} />
+          <Button img={btn.img} name={btn.name} color={btn.color} isDisabled={isDisabled} />
         </div>
       ))}
       <button onClick={onReset}>다시하기</button>

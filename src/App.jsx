@@ -24,14 +24,21 @@ function App() {
   const [computerResult, setComputerResult] = useState('')
   const [userBgColor, setUserBgColor] = useState(null)
   const [computerBgColor, setComputerBgColor] = useState(null)
+  const [isDisabled, setIsDisabled] = useState(false)
 
   // 사용자가 선택한 것을 받아오고, 컴퓨터는 랜덤함수로 가위바위보 중 하나를 정해서 비교해서 결과를 내는, 결국 메인 기능 함수
   const play = userPick => {
+    if (isDisabled) return
     const randomPick = options[Math.floor(Math.random() * 3)]
     setUserChoice(userPick)
     setComputerChoice(randomPick)
     const winner = getWinner(userPick, randomPick)
     setResult(winner)
+    // 버튼을 클릭했을 때 1초간 비활성화 되도록 하는 함수
+    setIsDisabled(true)
+    setTimeout(() => {
+      setIsDisabled(false)
+    }, 1000)
 
     if (winner === '비겼습니다') {
       setUserResult('비겼습니다')
@@ -80,7 +87,7 @@ function App() {
       <h1>가위바위보 게임</h1>
       <main>
         <Card user={{ ...user, choice: userChoice, bgColor: userBgColor }} result={userResult} />
-        <Buttons onClick={play} onReset={resetGame} />
+        <Buttons onClick={play} onReset={resetGame} isDisabled={isDisabled} />
         <Card
           user={{ ...computer, choice: computerChoice, bgColor: computerBgColor }}
           result={computerResult}

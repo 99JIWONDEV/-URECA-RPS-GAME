@@ -22,3 +22,9 @@
   font-weight: 700;
   color: var(--gray-700);
 }
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
