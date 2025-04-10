@@ -8,20 +8,6 @@
   gap: var(--gap2);
   padding: var(--gap2) var(--gap3);
   min-width: 40%;
-  ;
-}
-
-.winner {
-  background-color: var(--bg-color);
-}
-
-.winner h2,
-.winner p {
-  color: var(--user-color);
-}
-
-.loser {
-  opacity: 0.4;
 }
 
 .card > h2 {
@@ -39,4 +25,18 @@
   font-size: 1rem;
   font-weight: 600;
   color: var(--user-color);
+}
+
+/* 이기고 졌을 때의 스타일 */
+.winner {
+  background-color: var(--bg-color);
+}
+
+.winner h2,
+.winner p {
+  color: var(--user-color);
+}
+
+.loser {
+  opacity: 0.4;
 }
