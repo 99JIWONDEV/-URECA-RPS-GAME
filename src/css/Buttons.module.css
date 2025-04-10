@@ -1,0 +1,19 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: var(--gap2) var(--gap3);
+}
+
+.buttons > button {
+  width: 100%;
+  height: 30px;
+  background-color: var(--blue);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: 600;
+
+}
